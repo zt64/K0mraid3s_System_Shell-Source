@@ -1,6 +1,7 @@
 .gradle
 .idea
 .fleet
+.cxx
 build
 local.properties
 /app/release/

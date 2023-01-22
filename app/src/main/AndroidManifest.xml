@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -13,16 +14,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
 
         <service
-            android:name=".LanguagePack"
-            android:exported="false">
+            android:name=".ExploitService"
+            android:exported="true"
+            android:launchMode="singleTop"
+            tools:ignore="ExportedService">
             <intent-filter>
+                <action android:name="com.samsung.SMT" />
                 <action android:name="com.samsung.SMT.lang.poc" />
             </intent-filter>
         </service>
