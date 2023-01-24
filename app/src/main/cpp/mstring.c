@@ -44,7 +44,7 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 
-#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR  , "mercury-native", __VA_ARGS__)
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, "mercury-native", __VA_ARGS__)
 char *ip;
 char *port;
 char *dir;
@@ -60,6 +60,10 @@ JNIEXPORT jint JNICALL Java_com_samsung_SMT_engine_SmtTTS_setLanguage(JNIEnv *en
 //(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int)
 
 JNIEXPORT jint Java_com_samsung_SMT_engine_SmtTTS_getIsLanguageAvailable(JNIEnv *env, jobject thiz, jstring j1, jstring j2, jstring j3, jstring j4, jint j5, jint j6) {
+    return -1;
+}
+
+JNIEXPORT jint Java_com_samsung_SMT_engine_SmtTTS_getVersion() {
     return -1;
 }
 
