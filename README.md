@@ -4,6 +4,7 @@ As seen on XDA https://forum.xda-developers.com/t/system-shell-exploit-all-samsu
 # Usage
 
 ### Prerequisites
+- ADB installed and added to the system PATH variable
 - Samsung text-to-speech engine battery optimization set to unrestricted
 
 ### Steps
