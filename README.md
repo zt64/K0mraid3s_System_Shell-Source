@@ -35,7 +35,7 @@ In some cases, the script may not connect to the netcat server. This is an issue
 # How it works
 
 1. First the TTS app has to be downgraded to a vulnerable version, as the newer versions have patched this vulnerability
-2. The exploit app contains a service, which sends an intent that is normally sent after installing language packages
+2. The exploit app contains a receiver, which can be triggered via ADB to send an intent to the TTS app
     - The intent provides an engine version to trick Samsung TTS into accepting it
     - It also contains an extra property `SMT_ENGINE_PATH` that leads to library contained within the exploit APK
 3. Samsung TTS then loads the library provided in the intent
