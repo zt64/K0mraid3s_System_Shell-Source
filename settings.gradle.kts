@@ -1,2 +1,2 @@
-rootProject.name = "lang.poc"
+rootProject.name = "tts-system-shell"
 include(":app")

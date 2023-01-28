@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.samsung.SMT.lang.poc"
+    namespace = "com.samsung.SMT.lang.exploit"
     compileSdk = 33
 
     defaultConfig {
