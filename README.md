@@ -15,7 +15,7 @@ So unfortunately other devices are currently unsupported. If a vulnerable APK fo
 ### Steps
 1. Install the `app-release.apk` in the latest [release](https://github.com/zt64/K0mraid3s_System_Shell-Source/releases/latest)
 2. Reboot the device
-3. Run the script in `assets`
+3. Run the script in `assets`, making sure to also have the `apk` directory in the same directory as the script.
     - If you're on Linux this is `exploit.sh`
     - If you're on Windows this is `exploit.bat`
 4. If all goes well, the script should say:
